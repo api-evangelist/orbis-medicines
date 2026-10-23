@@ -1,0 +1,40 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 2
+  own: 2
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - website
+hosts:
+- host: api.orbismedicines.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: orbismedicines.com
+  role: api
+  relation: own
+- host: www.orbismedicines.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - Documentation
+  - Blog
+  - Careers
+  - PrivacyPolicy
+  serves:
+  - hosting
+  vendor: squarespace
+  registrable_domain: orbismedicines.com
+  role: website
+  relation: own

@@ -1,25 +1,64 @@
 aid: orbis-medicines
+
 name: Orbis Medicines
-description: 'Orbis Medicines is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by nea) and added to the network as a stub for full-pipeline profiling.'
+
+image: http://static1.squarespace.com/static/61dd406e56bdf97634a9b91a/t/61dd9e768e7e23670b35b0c3/1641913974339/logo-transp.png?format=1500w
+
+description: 'Orbis Medicines is a biotech company focused on developing oral biologics using AI-driven chemical innovation. Their platform n Gen discovers n Cycle oral macrocycles, aiming to create oral medicines with biologic-like efficacy, addressing unmet therapeutic needs.'
+
 url: https://raw.githubusercontent.com/api-evangelist/orbis-medicines/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Biotech
+- AI
+- Drug Discovery
+- Oral Therapeutics
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- nea
+
 common:
+- type: Hosts
+  url: hosts/orbis-medicines-hosts.yml
+- type: Vendors
+  url: vendors/orbis-medicines-vendors.yml
+- type: DomainSecurity
+  url: security/orbis-medicines-domain-security.yml
 - type: Website
   url: https://www.orbismedicines.com/
+- type: Documentation
+  url: https://www.orbismedicines.com/
+- type: Blog
+  url: https://www.orbismedicines.com/news
+- type: Careers
+  url: https://www.orbismedicines.com/careers
+- type: PrivacyPolicy
+  url: https://www.orbismedicines.com/privacy-policy
+
+apis: []
+
+x-backed-by:
+- nea
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

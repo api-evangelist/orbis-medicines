@@ -1,0 +1,22 @@
+generated: '2026-10-22'
+method: searched
+source: https://www.orbismedicines.com
+signals:
+  data_retention:
+    - source: https://www.orbismedicines.com/privacy-policy
+      http_status: 200
+      fetched: /tmp/orbis_privacy.html
+      quote: "Your information may be retained for reporting or record-keeping purposes in compliance with applicable laws."
+      note: Retains personal data for reporting and record-keeping as required by law.
+  subprocessors:
+    - source: https://www.orbismedicines.com/privacy-policy
+      http_status: 200
+      fetched: /tmp/orbis_privacy.html
+      quote: "Some of these cookies are served by third-party service providers or business partners and can be used by these parties to recognise your computer or mobile device when it visits the Service and other online services."
+      note: Acknowledges third‑party service providers handling data (sub‑processors).
+  notice_and_action:
+    - source: https://www.orbismedicines.com/privacy-policy
+      http_status: 200
+      fetched: /tmp/orbis_privacy.html
+      quote: "Orbis Medicines reserves the right to modify this Privacy Policy without prior notice. Any revised policy will be posted on the website."
+      note: Indicates they may change policy without notifying users beforehand.
